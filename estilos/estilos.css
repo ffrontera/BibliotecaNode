@@ -67,19 +67,19 @@
 .textoImg{
   display: flex;
   align-items: center;
-  padding: 0 50px 0 50px;
-
+  padding: 0 60px 0 60px;
 }
 
 .img{
   width: 60%;
 }
+
+
 .texto{
   width: 35%;
   padding: 27px;
   text-align: left;
+  font-family: "Montserrat";
+  font-size: larger;
 }
 
-.contenidoNosotros{
-
-}
