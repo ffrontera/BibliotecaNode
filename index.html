@@ -1,365 +1,403 @@
 <!DOCTYPE html>
 <html lang="es">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
-    />
-    <link rel="stylesheet" href="estilos/estilos.css" />
-    <title>BiblioNode</title>
-  </head>
-  <body>
-    <section></section>
-    <section class="recomendaciones">
-      <div class="novedades">
-        <h2>NOVEDADES</h2>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 1</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="estilos/estilos.css" />
+  <script src="https://kit.fontawesome.com/10086ffcb8.js" crossorigin="anonymous"></script>
+  <title>BiblioNode</title>
+</head>
+
+<body>
+  <section>
+
+    <nav>
+      <div class="barraNavegacion">
+
+        <a href="/" class="linkLogo">
+          <img src="" alt="Logo de la biblioteca" class="logo" />
+        </a>
+
+        <div class="navMenu">
+          <label for="nav-check">
+            <span></span>
+            <span></span>
+            <span></span>
+          </label>
+        </div>
+
+        <div class="buscador">
+          <form action="">
+            <input type="text" placeholder="Buscar" name="inputBuscador">
+            <button type="submit"></button><i class="fa-solid fa-magnifying-glass"></i>
+          </form>
+        </div>
+
+        <div class="navBotones">
+          <a href="#about" class="botonSecundario">Recomnendados</a>
+          <a href="#contact" class="botonSecundario">Sobre nosotros</a>
+          <a href="#contact" class="botonSecundario">Contacto</a>
+          <a href="#contact" class="botonPrimario">¡Quiero ser parte!</a>
+        </div>
+
+      </div>
+    </nav>
+
+  </section>
+  <section class="recomendaciones">
+    <div class="novedades">
+      <h2>NOVEDADES</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
             </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 2</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 3</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 4</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 5</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 6</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 7</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 8</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 9</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 10</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
+            <div class="informacion">
+              <h3>Título 1</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
-        </div>
-      </div>
-      <div class="proximamente">
-        <h2>PROXIMAMENTE</h2>
-        <div class="swiper mySwiper">
-          <div class="swiper-wrapper">
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 1</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
             </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 2</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 3</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 4</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 5</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 6</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 7</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 8</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 9</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
-            </div>
-            <div class="swiper-slide">
-              <div class="imagen">
-                <img src="./img/gray.jpeg" alt="Imagen Gris" />
-              </div>
-              <div class="informacion">
-                <h3>Título 10</h3>
-                <a href="#">#AVENTURA #TERROR</a>
-                <p>
-                  Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
-                  eveniet consequatur aperiam omnis quidem qui obcaecati eius
-                  dicta mollitia reiciendis.
-                </p>
-                <button>Ver libro</button>
-              </div>
+            <div class="informacion">
+              <h3>Título 2</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
             </div>
           </div>
-          <div class="swiper-button-next"></div>
-          <div class="swiper-button-prev"></div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 3</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 4</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 5</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 6</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 7</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 8</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 9</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 10</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
         </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
       </div>
-    </section>
-    <section class="sobreNosotros">
-      <h2>Sobre Nosotros:</h2>
-    </section>
-    <section></section>
-  </body>
-  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
-  <script>
-    var swiper = new Swiper(".mySwiper", {
-      slidesPerView: 1,
-      spaceBetween: 30,
-      navigation: {
-        nextEl: ".swiper-button-next",
-        prevEl: ".swiper-button-prev",
+    </div>
+    <div class="proximamente">
+      <h2>PROXIMAMENTE</h2>
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 1</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 2</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 3</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 4</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 5</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 6</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 7</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 8</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 9</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+          <div class="swiper-slide">
+            <div class="imagen">
+              <img src="./img/gray.jpeg" alt="Imagen Gris" />
+            </div>
+            <div class="informacion">
+              <h3>Título 10</h3>
+              <a href="#">#AVENTURA #TERROR</a>
+              <p>
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Nemo
+                eveniet consequatur aperiam omnis quidem qui obcaecati eius
+                dicta mollitia reiciendis.
+              </p>
+              <button>Ver libro</button>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </div>
+    </div>
+  </section>
+  <section class="sobreNosotros">
+    <h2>Sobre Nosotros:</h2>
+  </section>
+  <section></section>
+</body>
+<script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    slidesPerView: 1,
+    spaceBetween: 30,
+    navigation: {
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+      480: {
+        slidesPerView: 2,
+        spaceBetween: 20,
       },
-      breakpoints: {
-        480: {
-          slidesPerView: 2,
-          spaceBetween: 20,
-        },
-        640: {
-          slidesPerView: 3,
-          spaceBetween: 40,
-        },
-        1024: {
-          slidesPerView: 4,
-          spaceBetween: 30,
-        },
+      640: {
+        slidesPerView: 3,
+        spaceBetween: 40,
       },
-    });
-  </script>
+      1024: {
+        slidesPerView: 4,
+        spaceBetween: 30,
+      },
+    },
+  });
+</script>
+
 </html>

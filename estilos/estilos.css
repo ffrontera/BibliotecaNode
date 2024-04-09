@@ -1,3 +1,112 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0px;
+  font-family: "Montserrat", sans-serif;
+}
+
+
+/* Comienzo de estilos de navbar */
+nav {
+  height: 50px;
+  width: 100%;
+  background-color: #151515;
+  position: sticky;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+}
+
+.barraNavegacion {
+  display: flex;
+  width: 100%;
+  max-width: 1272px;
+  align-items: center;
+  justify-content: space-between;
+
+}
+
+.navMenu {
+  display: none;
+}
+
+.navBotones {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.botonPrimario {
+  text-decoration: none;
+  color: #fafafa;
+  font-size: 16px;
+  border: 1px solid #fafafa;
+  padding: 8px 12px;
+  border-radius: 16px;
+  
+}
+
+.botonSecundario {
+  text-decoration: none;
+  color: #fafafa;
+  
+}
+
+nav > #nav-check {
+  display: none;
+}
+
+@media (max-width:600px) {
+  .nav > .nav-btn {
+    display: inline-block;
+    position: absolute;
+    right: 0px;
+    top: 0px;
+  }
+  .nav > .nav-btn > label {
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    padding: 13px;
+  }
+  .nav > .nav-btn > label:hover,.nav  #nav-check:checked ~ .nav-btn > label {
+    background-color: rgba(0, 0, 0, 0.3);
+  }
+  .nav > .nav-btn > label > span {
+    display: block;
+    width: 25px;
+    height: 10px;
+    border-top: 2px solid #eee;
+  }
+  .navBotones {
+    position: absolute;
+    display: block;
+    width: 100%;
+    background-color: #333;
+    height: 0px;
+    transition: all 0.3s ease-in;
+    overflow-y: hidden;
+    top: 50px;
+    left: 0px;
+  }
+  .navBotones > a {
+    display: block;
+    width: 100%;
+  }
+  .nav > #nav-check:not(:checked) ~ .nav-links {
+    height: 0px;
+  }
+  .nav > #nav-check:checked ~ .nav-links {
+    height: calc(100vh - 50px);
+    overflow-y: auto;
+  }
+}
+
+/* Fin de estilos de navbar */
+
+
 .recomendaciones {
   width: 90%;
   height: 100%;
