@@ -1,6 +1,6 @@
 /*--Recomendaciones--*/
 
-.recomendaciones {
+.recomendaciones, .contacto {
   width: 90%;
   height: 100%;
   padding: 40px 16px;
@@ -83,4 +83,65 @@
   text-align: left;
   font-family: "Montserrat";
   font-size: larger;
+}
+
+
+/*Contacto*/
+.contacto__main {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 5px;
+}
+
+.contacto__contenido {
+ height: 100%;
+ display: block;
+ padding: 10px;
+}
+
+.formulario label{
+ margin: 5px auto;
+}
+
+.contacto__contenido input, .contacto__contenido textarea {
+ border: .5px solid #151515;
+ border-radius: 10px;
+ padding: 5px;
+}
+
+.contacto__contenido textarea {
+ resize: none;
+}
+
+.contactoRedes {
+ border-right :1px solid #151515;
+ border-left: 1px solid #151515;
+ font-size: 10px;
+ display: flex;
+ flex-direction: column;
+ align-items: baseline;
+ justify-content: center;
+}
+
+.contactoRedes p{
+ margin: 2px 5px;
+}
+
+.contactoRedes span {
+ margin-top: 10px;
+}
+
+.negrita {
+ font-weight: 800;
+}
+
+.contacto__contenido iframe {
+ height: 100%;
+ width: 100%;
+}
+
+a{
+ margin: 5px;
+ font-size: 20px;
+ color: #151515;
 }
