@@ -1,3 +1,7 @@
+* {
+  box-sizing: border-box;
+}
+
 /*--Recomendaciones--*/
 
 .recomendaciones, .contacto {
@@ -90,17 +94,38 @@
 .contacto__main {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 5px;
+  gap: 2.5%;
 }
 
 .contacto__contenido {
  height: 100%;
  display: block;
- padding: 10px;
+ /* padding: 10px; */
 }
 
-.formulario label{
- margin: 5px auto;
+.formulario input[type="radio"], .formulario input[type="checkbox"]{
+  display: none;
+}
+
+.vacio, .seleccionado{
+  width: 1.4em;
+  height: 1.4em;
+}
+
+input[type="radio"] + label .seleccionado, input[type="checkbox"] + label .seleccionado {
+  display: none;
+}
+
+input[type="radio"] + label .vacio, input[type="checkbox"] + label .vacio{
+  display: inline-block;
+}
+
+input[type="radio"]:checked + label .vacio, input[type="checkbox"]:checked + label .vacio{
+  display: none;
+}
+
+input[type="radio"]:checked + label .seleccionado, input[type="checkbox"]:checked + label .seleccionado {
+  display: inline-block;
 }
 
 .contacto__contenido input, .contacto__contenido textarea {
@@ -109,8 +134,13 @@
  padding: 5px;
 }
 
-.contacto__contenido textarea {
+.contacto__contenido input[type="text"] {
+  width: 48%;
+}
+
+.contacto__contenido textarea, .contacto__contenido input[type="email"] {
  resize: none;
+ width: 100%;
 }
 
 .contactoRedes {
@@ -132,7 +162,7 @@
 }
 
 .negrita {
- font-weight: 800;
+ font-weight: bolder;
 }
 
 .contacto__contenido iframe {
