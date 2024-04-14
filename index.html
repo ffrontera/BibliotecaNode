@@ -16,32 +16,44 @@
 
 <body>
   <header>
+      <nav class="barraNavegacion">
 
-    <nav class="barraNavegacion">
+        <a href="/" class="linkLogo">
+          <img src="./img/logo.svg" alt="Logo de la biblioteca" class="logo" />
+        </a>
 
-      <a href="/" class="linkLogo">
-        <img src="./img/logo.svg" alt="Logo de la biblioteca" class="logo" />
-      </a>
+        <form action="" class="buscadorGrupo" id="buscador">
+          <input type="text" placeholder="Buscar" name="inputBuscador" class="buscador" id="valorBuscado">
+          <button type="submit" class="botonBuscador"><i class="fa-solid fa-magnifying-glass"></i></button>
+        </form>
 
-      <form action="" class="buscadorGrupo" id="buscador">
-        <input type="text" placeholder="Buscar" name="inputBuscador" class="buscador" id="valorBuscado">
-        <button type="submit" class="botonBuscador"><i class="fa-solid fa-magnifying-glass"></i></button>
-      </form>
+        <div class="menuResponsive" id="menuResponsive">
+          <i class="fa-solid fa-book"></i>
+        </div>
 
-      <div class="menuResponsive" id="menuResponsive">
-        <i class="fa-solid fa-book"></i>
-      </div>
+        <div class="menu" id="menu">
+          <a href="#recomendaciones" class="botonSecundario">Recomendados</a>
+          <a href="#sobreNosotros" class="botonSecundario">Sobre nosotros</a>
+          <a href="#contacto" class="botonSecundario">Contacto</a>
+          <a href="#contacto" class="botonPrimario">¡Quiero ser parte!</a>
+        </div>
 
-      <div class="menu" id="menu">
-        <a href="#recomendaciones" class="botonSecundario">Recomendados</a>
-        <a href="#sobreNosotros" class="botonSecundario">Sobre nosotros</a>
-        <a href="#contacto" class="botonSecundario">Contacto</a>
-        <a href="#contact" class="botonPrimario">¡Quiero ser parte!</a>
-      </div>
-
-    </nav>
+      </nav>
 
   </header>
+
+  <section class="banner">
+    <div class="contenido">
+      <h1 class="titulo">
+        Encontrá tu próxima <span>gran historia</span>
+      </h1>
+      <h2 class="subtitulo">
+        Biblioteca Popular Alfonsina Storni
+      </h2>
+    </div>
+    <img src="./img/imgBanner.png" alt="Foto de libro, banner de la web" class="bannerImg">
+  </section>
+
   <section class="recomendaciones" id="recomendaciones">
     <div class="novedades">
       <h2>NOVEDADES</h2>
