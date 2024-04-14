@@ -361,18 +361,28 @@
         <h2>Contacto</h2>
       </div>
       <div class="contacto__main">
-        <div class="contacto__contenido formulario ">
-          <form action="">
+        <form action="">
+          <div class="contacto__contenido formulario ">
+            <div class="div1">
               <label for="nombre">Nombre</label>
-              <label for="apellido">Apellido|</label>
-              <br>
+            </div>
+            <div class="div2">
+              <label for="apellido">Apellido</label>
+            </div>
+            <div class="div3">
               <input type="text" id="nombre" placeholder="Nombre">
+            </div>
+            <div class="div4">
               <input type="text" id="apellido" placeholder="Apellido">
-              <br>
+            </div>
+            <div class="div5">
               <label for="mail">Mail</label>
-              <input type="email" name="mail" id="mail" placeholder="biblioteca@tupueblo.com|">
+            </div>
+            <div class="div6">
+              <input type="email" name="mail" id="mail" placeholder="biblioteca@tupueblo.com">
+            </div>
+            <div class="div7">
               <input type="radio" name="condicion" id="socio" value="true">
-              
               <label for="socio">
                 <i class="vacio">
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -387,7 +397,8 @@
                 </i>
                 Asociado
               </label>
-              <input type="radio" name="condicion" id="noSocio" value="false">
+            </div>
+            <div class="div8"><input type="radio" name="condicion" id="noSocio" value="false">
               <label for="noSocio">
                 <i class="vacio">
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -401,10 +412,10 @@
                   </svg>
                 </i>
                 No asociado
-              </label>
-              <label for="consulta">Consulta</label>
-              <textarea name="consulta" id="consulta" placeholder="Escriba su consulta aquí"></textarea>
-              <input type="checkbox" name="terminos" id="terminos" value="true">
+              </label></div>
+            <div class="div9"><label for="consulta">Consulta</label></div>
+            <div class="div10"><textarea name="consulta" id="consulta" placeholder="Escriba su consulta aquí"></textarea></div>
+            <div class="div11"><input type="checkbox" name="terminos" id="terminos" value="true">
               <label for="terminos">
                 <i class="seleccionado">
                   <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -418,10 +429,12 @@
                   </svg>
                 </i>
                 Acepto los términos y condiciones
-              </label>
+              </label></div>
+            <div class="div12">
               <input type="submit" value="Enviar consulta">
-          </form>
-        </div>
+            </div>
+          </div>
+        </form>
         <div class="contacto__contenido contactoRedes">
           <p class="negrita">Telefono</p>
           <p>03582xxxxx</p>
