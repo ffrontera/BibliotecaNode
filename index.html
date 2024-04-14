@@ -15,42 +15,34 @@
 </head>
 
 <body>
-  <section>
+  <header>
 
-    <nav>
-      <div class="barraNavegacion">
+    <nav class="barraNavegacion">
 
-        <a href="/" class="linkLogo">
-          <img src="" alt="Logo de la biblioteca" class="logo" />
-        </a>
+      <a href="/" class="linkLogo">
+        <img src="./img/logo.svg" alt="Logo de la biblioteca" class="logo" />
+      </a>
 
-        <div class="navMenu">
-          <label for="nav-check">
-            <span></span>
-            <span></span>
-            <span></span>
-          </label>
-        </div>
+      <form action="" class="buscadorGrupo" id="buscador">
+        <input type="text" placeholder="Buscar" name="inputBuscador" class="buscador" id="valorBuscado">
+        <button type="submit" class="botonBuscador"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </form>
 
-        <div class="buscador">
-          <form action="">
-            <input type="text" placeholder="Buscar" name="inputBuscador">
-            <button type="submit"></button><i class="fa-solid fa-magnifying-glass"></i>
-          </form>
-        </div>
-
-        <div class="navBotones">
-          <a href="#about" class="botonSecundario">Recomnendados</a>
-          <a href="#contact" class="botonSecundario">Sobre nosotros</a>
-          <a href="#contact" class="botonSecundario">Contacto</a>
-          <a href="#contact" class="botonPrimario">¡Quiero ser parte!</a>
-        </div>
-
+      <div class="menuResponsive" id="menuResponsive">
+        <i class="fa-solid fa-book"></i>
       </div>
+
+      <div class="menu" id="menu">
+        <a href="#recomendaciones" class="botonSecundario">Recomendados</a>
+        <a href="#sobreNosotros" class="botonSecundario">Sobre nosotros</a>
+        <a href="#contacto" class="botonSecundario">Contacto</a>
+        <a href="#contact" class="botonPrimario">¡Quiero ser parte!</a>
+      </div>
+
     </nav>
 
-  </section>
-  <section class="recomendaciones">
+  </header>
+  <section class="recomendaciones" id="recomendaciones">
     <div class="novedades">
       <h2>NOVEDADES</h2>
       <div class="swiper mySwiper">
@@ -370,7 +362,7 @@
       </div>
     </div>
   </section>
-  <section class="sobreNosotros">
+  <section class="sobreNosotros" id="sobreNosotros">
     <div class="contenidoNosotros">
       <h2 class="textoImg">Sobre Nosotros </h2>
       <h3 class="textoImg">Biblioteca Popular ALFONSINA STORNI</h3>
@@ -397,7 +389,7 @@
 
     </div>
   </section>
-  <section class="contacto">
+  <section class="contacto" id="contacto">
     <div class="contacto__titulo">
       <h2>Contacto</h2>
     </div>
@@ -540,6 +532,23 @@
       },
     },
   });
+</script>
+
+<script type="text/javascript">
+  document.getElementById('buscador').onsubmit = function () {
+    window.location = 'listado.html?u=' + document.getElementById('valorBuscado').value;
+    return false;
+  }
+</script>
+
+<script>
+  const element = document.getElementById("menuResponsive");
+  element.addEventListener("click", myFunction);
+
+  function myFunction() {
+    let menu = document.getElementById("menu");
+    menu.classList.toggle("menuDesplegado");
+  }
 </script>
 
 </html>
