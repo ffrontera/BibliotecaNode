@@ -1,93 +1,63 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://use.fontawesome.com/releases/v6.5.2/css/all.css"
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <title>BiblioNode</title>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
+  <body>
+    <header>
+      <nav class="barraNavegacion">
+        <a href="/" class="linkLogo">
+          <img src="./img/logo.svg" alt="Logo de la biblioteca" class="logo" />
+        </a>
 
-<body>
+        <form action="" class="buscadorGrupo" id="buscador">
+          <input
+            type="text"
+            placeholder="Buscar"
+            name="inputBuscador"
+            class="buscador"
+            id="valorBuscado"
+          />
+          <button type="submit" class="botonBuscador">
+            <i class="fa-solid fa-magnifying-glass"></i>
+          </button>
+        </form>
 
-    <body>
-        <header>
-            <nav>
-                <ul>
-                    <li><a href="./contacto.html" class="menuLink">Contacto</a></li></li>
-                    <li><a href="./contacto.html" class="menuLink">Contacto</a></li></li>
-                    <li><a href="./contacto.html" class="menuLink">Contacto</a></li></li>
-                </ul>
-            </nav>
-        </header>
-        <main>
-            <section id="card-section">
-                <h2>Lugares para visitar</h2>
-                <div>
-                    <div class="card">
-                        <img src="img/colombia.jpeg" alt="">
-                        <h3>Colombia</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio totam fugiat sed consequatur
-                            laboriosam, error veritatis cum deserunt numquam sint asperiores? Laborum doloribus
-                            aspernatur
-                            id
-                            voluptatibus architecto, a voluptatum beatae amet nesciunt veritatis facilis numquam.</p>
-                    </div>
-                    <div class="card">
-                        <img src="img/argentina.jpeg" alt="">
-                        <h3>Argentina</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio totam fugiat sed consequatur
-                            laboriosam, error veritatis cum deserunt numquam sint asperiores? Laborum doloribus
-                            aspernatur
-                            id
-                            voluptatibus architecto, a voluptatum beatae amet nesciunt veritatis facilis numquam.</p>
-                    </div>
-                    <div class="card">
-                        <img src="img/brasil.jpeg" alt="">
-                        <h3>Brasil</h3>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Optio totam fugiat sed consequatur
-                            laboriosam, error veritatis cum deserunt numquam sint asperiores? Laborum doloribus
-                            aspernatur
-                            id
-                            voluptatibus architecto, a voluptatum beatae amet nesciunt veritatis facilis numquam.</p>
-                    </div>
-                </div>
-            </section>
-            <section class="contact-form-section">
-                <h2>Contacto</h2>
-                <div>
+        <div class="menuResponsive" id="menuResponsive">
+          <i class="fa-solid fa-book"></i>
+        </div>
 
-                    <div class="formulario">
+        <div class="menu" id="menu">
+          <a href="#recomendaciones" class="botonSecundario">Recomendados</a>
+          <a href="#sobreNosotros" class="botonSecundario">Sobre nosotros</a>
+          <a href="#contacto" class="botonSecundario">Contacto</a>
+          <a href="#contacto" class="botonPrimario">¡Quiero ser parte!</a>
+        </div>
+      </nav>
+    </header>
 
-                        <form action="">
-                            <label for="nombre">Nombre</label>
-                            <input type="text" id="nombre">
-                            <label for="email">Email</label>
-                            <input type="text" id="email">
-                            <input type="submit" value="Enviar">
-                        </form>
-                    </div>
-                    <div class="contacto">
-                        <p><span>Dirección:</span> Calle s/n 123</p>
-                        <p><span>Email:</span> mimail@mail.com</p>
-                        <p><span>Teléfono:</span> 123-123456</p>
-                    </div>
-                </div>
-            </section>
-        </main>
-        <footer>
-            <div>
-                <ul>
-                    <li><a href="">Inicio</a></li>
-                    <li><a href="">Nosotros</a></li>
-                    <li><a href="">Blog</a></li>
-                </ul>
-            </div>
-            <div>
-                <h4>Quiero recibir novedades</h4>
-                <div class="news-letter"> <input type="text"><input type="submit" value="Enviar">
-                </div>
-            </div>
-        </footer>
-    </body>
-
+    <main>
+      <section>
+        <div class="box">
+          <div id="card_box"></div>
+        </div>
+      </section>
+    </main>
+    <script src="js/script.js" type="module"></script>
+  </body>
 </html>
