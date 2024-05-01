@@ -88,41 +88,6 @@ nav {
   font-size: 16px;
 }
 
-@media (max-width: 600px) {
-  .buscadorGrupo {
-    width: 65%;
-  }
-  
-  .menuResponsive {
-    display: block;
-    margin: 5px;
-  }
-  
-  .fa-book {
-    color: #fafafa;
-    padding: 4px;
-    font-size: 32px;
-  }
-  
-  .menu {
-    display: none;
-  }
-  
-  .menuDesplegado {
-    position: absolute;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    width: 50vw;
-    background-color: #151515;
-    overflow-y: hidden;
-    top: 50px;
-    right: 0px;
-    padding: 5px;
-    border-radius: 16px;
-  }
-}
-
 /* Fin de estilos de navbar */
 
 section{
@@ -132,7 +97,7 @@ section{
   margin: auto;
 }
 
-/* Fin de estilos de banner */
+/* Inicio de estilos de banner */
 
 .banner {
   display: flex;
@@ -179,36 +144,6 @@ section{
 .bannerImg {
   padding: 0 5%;
   width: 50%;
-}
-
-@media (max-width: 600px) {
-  .banner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-
-  .contenido {
-    padding: 20px;
-    width: 100%;
-  }
-
-  .titulo {
-    font-size: 30px;
-  }
-
-  .titulo > span {
-    font-size: 40px;
-  }
-
-  .subtitulo {
-    font-size: 10px;
-  }
-
-  .bannerImg {
-    padding: 0 10%;
-    width: 100%;
-  }
 }
 
 /* Fin de estilos de banner */
@@ -308,7 +243,6 @@ section{
 }
 
 /*Contacto*/
-
 
 .contacto__main {
   display: grid;
@@ -466,16 +400,6 @@ a {
   color: #151515;
 }
 
-@media screen and (max-width: 480px) {
-  .contacto__main {
-    display: block;
-  }
-
-  .contacto__contenido {
-    margin: 3% 0;
-  }
-}
-
 /*Listado*/
 .box {
   width: 95%;
@@ -537,3 +461,97 @@ p {
 .libro:hover {
   transform: rotateY(180deg);
 }
+
+
+
+@media (max-width: 600px) {
+  /*nav*/
+  .buscadorGrupo {
+    width: 65%;
+  }
+  
+  .menuResponsive {
+    display: block;
+    margin: 5px;
+  }
+  
+  .fa-book {
+    color: #fafafa;
+    padding: 4px;
+    font-size: 32px;
+  }
+  
+  .menu {
+    display: none;
+  }
+  
+  .menuDesplegado {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    width: 50vw;
+    background-color: #151515;
+    overflow-y: hidden;
+    top: 50px;
+    right: 0px;
+    padding: 5px;
+    border-radius: 16px;
+  }
+
+  /*banner*/
+
+  .banner {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .contenido {
+    padding: 20px;
+    width: 100%;
+  }
+
+  .titulo {
+    font-size: 30px;
+  }
+
+  .titulo > span {
+    font-size: 40px;
+  }
+
+  .subtitulo {
+    font-size: 10px;
+  }
+
+  .bannerImg {
+    padding: 0 10%;
+    width: 100%;
+  }
+
+  /*sobre nosotros*/
+
+  .textoImg {
+    display: block;
+  }
+
+  .texto {
+    width: 100%;
+  }
+  
+  .img {
+    display: none;
+  }
+
+  /*contacto*/
+  .contacto__main {
+    display: block;
+  }
+
+  .contacto__contenido {
+    margin: 3% 0;
+  }
+}
+
+
+ 
