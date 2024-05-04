@@ -25,13 +25,14 @@
           <img src="./img/logo.svg" alt="Logo de la biblioteca" class="logo" />
         </a>
 
-        <form action="" class="buscadorGrupo" id="buscador">
+        <form class="buscadorGrupo" id="buscador">
           <input
             type="text"
             placeholder="Buscar"
             name="inputBuscador"
             class="buscador"
             id="valorBuscado"
+            onkeypress="return event.keyCode !== 13;"
           />
           <button type="submit" class="botonBuscador">
             <i class="fa-solid fa-magnifying-glass"></i>

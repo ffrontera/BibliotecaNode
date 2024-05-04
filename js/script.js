@@ -3,6 +3,7 @@ fetch("../info.json")
   .then((data) => {
     // Obtener el contenedor donde se agregarán los libros
     const librosContainer = document.getElementById("card_box");
+    let librosMostrados = []; // Mantener un arreglo de los libros mostrados
 
     // Iterar sobre cada libro en los datos obtenidos
 
@@ -14,6 +15,7 @@ fetch("../info.json")
 
       const libroElement = document.createElement("div");
       libroElement.classList.add("libro");
+      libroElement.setAttribute("data-titulo", libro.Título);
 
       const frenteElement = document.createElement("div");
       frenteElement.classList.add("frente");
@@ -48,6 +50,29 @@ fetch("../info.json")
       libroElement.appendChild(dorsoElement);
 
       librosContainer.appendChild(libroElement);
+
+      librosMostrados.push(libro);
+      console.log(librosMostrados);
+    });
+    // Agregar la lógica de búsqueda
+    document.getElementById('buscador').addEventListener('keyup', function(event) {
+      const query = event.target.value.trim().toLowerCase();
+      console.log(query);
+      const results = data.filter(libro => libro.Título.toLowerCase().includes(query));
+      librosMostrados = results;
+
+      // Ocultar todos los libros
+      librosContainer.querySelectorAll('.libro').forEach(libro => {
+        libro.style.display = 'none';
+      });
+
+      // Mostrar solo los libros que coinciden con la búsqueda
+      results.forEach(libro => {
+        const libroElement = librosContainer.querySelector(`[data-titulo="${libro.Título}"]`);
+        if (libroElement) {
+          libroElement.style.display = 'block';
+        }
+      });
     });
   })
   .catch((error) => {
