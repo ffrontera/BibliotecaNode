@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <title>BiblioNode</title>
+</head>
+
+<body>
+    <header>
+        <nav class="barraNavegacion">
+            <a href="/" class="linkLogo">
+                <img src="./img/logo.svg" alt="Logo de la biblioteca" class="logo" />
+            </a>
+
+            <form action="" class="buscadorGrupo" id="buscador">
+                <input type="text" placeholder="Buscar" name="inputBuscador" class="buscador" id="valorBuscado" />
+                <button type="submit" class="botonBuscador">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <div class="menuResponsive" id="menuResponsive">
+                <i class="fa-solid fa-book"></i>
+            </div>
+
+            <div class="menu" id="menu">
+                <a href="#recomendaciones" class="botonSecundario">Recomendados</a>
+                <a href="#sobreNosotros" class="botonSecundario">Sobre nosotros</a>
+                <a href="#contacto" class="botonSecundario">Contacto</a>
+                <a href="#contacto" class="botonPrimario">¡Quiero ser parte!</a>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <form action="">
+                <div id="contenedorRegistro">
+                    <h1>Sé parte de la biblioteca</h1>
+
+                    <label for="nombre"><b>Nombre</b></label>
+                    <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>
+
+                    <label for="apellido"><b>Apellido</b></label>
+                    <input type="text" placeholder="Apellido" name="apellido" id="apellido" required>
+
+                    <label for="telefono"><b>Teléfono</b></label>
+                    <input type="text" placeholder="Teléfono" name="telefono" id="telefono" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Email" name="email" id="email" required>
+
+                    <label for="contraseña"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Contraseña" name="contraseña" id="contraseña" required>
+
+                    <label for="contraseña-r"><b>Repetí la contraseña</b></label>
+                    <input type="password" placeholder="Repetí la contraseña" name="contraseña-r" id="contraseña-r"
+                        required>
+                    <hr>
+                    <p>Por favor, aceptá nuestros <a href="#">Terms & Privacy</a>.</p>
+
+                    <button type="submit" class="registerbtn">Re</button>
+                </div>
+
+                <div class="container signin">
+                    <p>¿Ya sos miembro de la biblioteca? <a href="#">Iniciá sesión</a>.</p>
+                </div>
+
+                <div id="contenedorLogin">
+                    <h1>Ingresá a tu cuenta</h1>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Email" name="email" id="email" required>
+
+                    <label for="contraseña"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Contraseña" name="contraseña" id="contraseña" required>
+
+                    <button type="submit" class="registerbtn">Ingresar</button>
+                </div>
+
+                <div class="container signin">
+                    <p>¿Querés ser parte? <a href="#">registrate</a>.</p>
+                </div>
+            </form>
+        </section>
+    </main>
+</body>
+<script>
+    const element = document.getElementById("menuResponsive");
+    element.addEventListener("click", myFunction);
+
+    function myFunction() {
+        let menu = document.getElementById("menu");
+        menu.classList.toggle("menuDesplegado");
+    }
+</script>
+
+</html>
