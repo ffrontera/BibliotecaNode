@@ -27,6 +27,7 @@ nav {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
+  padding: 0 40px;
 }
 
 .linkLogo {
@@ -92,7 +93,7 @@ nav {
 
 section{
   width: 100%;
-  padding: 20px 40px;
+  padding: 40px 40px 20px;
   max-width: 1272px;
   margin: auto;
 }
@@ -221,10 +222,6 @@ section{
 }
 
 /*Sección de sobreNosotros*/
-
-.sobreNosotros{
-  padding-top: 60px;
-}
 
 .textoImg {
   display: flex;
@@ -462,6 +459,32 @@ p {
   transform: rotateY(180deg);
 }
 
+/*footer*/
+
+footer {
+  height: 158px;
+  background-color: #151515;
+}
+
+.footer {
+  max-width: 1272px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+  padding: 0 40px;
+  margin: 0 auto;
+}
+
+.menuFooter{
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logoFooter{
+  height: 46px;
+  margin-top: 10px;
+}
+
 
 
 @media (max-width: 600px) {
@@ -538,7 +561,7 @@ p {
   .texto {
     width: 100%;
   }
-  
+
   .img {
     display: none;
   }
@@ -551,7 +574,12 @@ p {
   .contacto__contenido {
     margin: 3% 0;
   }
-}
 
+  .footer{
+    margin: 0;
+  }
 
- 
+  .menuFooterResponsive{
+    width: 10px;
+  }
+} 
