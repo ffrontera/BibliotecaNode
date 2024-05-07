@@ -1,4 +1,4 @@
-fetch("../info.json")
+fetch("./info.json")
   .then((response) => response.json())
   .then((data) => {
     // Obtener el contenedor donde se agregarán los libros
