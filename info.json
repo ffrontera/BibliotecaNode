@@ -6,7 +6,7 @@
     "Editorial": "Harvest Books",
     "Autor": "Antoine de Saint-Exupéry",
     "Género": "Infantil",
-    "Imagen": "/public/El Principito.webp"
+    "Imagen": "./public/El Principito.webp"
   },
   {
     "Título": "1984",
@@ -15,7 +15,7 @@
     "Editorial": "Signet Classic",
     "Autor": "George Orwell",
     "Género": "Ficción",
-    "Imagen": "/public/1984.webp"
+    "Imagen": "./public/1984.webp"
   },
   {
     "Título": "Cien años de soledad",
@@ -24,7 +24,7 @@
     "Editorial": "Vintage Español",
     "Autor": "Gabriel García Márquez",
     "Género": "Realismo",
-    "Imagen": "/public/Cien Años de Soledad.webp"
+    "Imagen": "./public/Cien Años de Soledad.webp"
   },
   {
     "Título": "Orgullo y prejuicio",
@@ -33,7 +33,7 @@
     "Editorial": "Penguin Classics",
     "Autor": "Jane Austen",
     "Género": "Novela",
-    "Imagen": "/public/Orgullo y Prejuicio.webp"
+    "Imagen": "./public/Orgullo y Prejuicio.webp"
   },
   {
     "Título": "Harry Potter y la piedra filosofal",
@@ -42,7 +42,7 @@
     "Editorial": "Salamandra",
     "Autor": "J.K. Rowling",
     "Género": "Fantasía",
-    "Imagen": "/public/Harry Potter.webp"
+    "Imagen": "./public/Harry Potter.webp"
   },
   {
     "Título": "Don Quijote de la Mancha",
@@ -51,7 +51,7 @@
     "Editorial": "Austral",
     "Autor": "Miguel de Cervantes",
     "Género": "Novela",
-    "Imagen": "/public/Don Quijote de la Mancha.webp"
+    "Imagen": "./public/Don Quijote de la Mancha.webp"
   },
   {
     "Título": "La sombra del viento",
@@ -60,7 +60,7 @@
     "Editorial": "Planeta",
     "Autor": "Carlos Ruiz Zafón",
     "Género": "Novela",
-    "Imagen": "/public/La Sombra del Viento.webp"
+    "Imagen": "./public/La Sombra del Viento.webp"
   },
   {
     "Título": "El señor de los anillos: La comunidad del anillo",
@@ -69,7 +69,7 @@
     "Editorial": "Minotauro",
     "Autor": "J.R.R. Tolkien",
     "Género": "Fantasía",
-    "Imagen": "/public/El Señor de los Anillos.webp"
+    "Imagen": "./public/El Señor de los Anillos.webp"
   },
   {
     "Título": "Matar a un ruiseñor",
@@ -78,7 +78,7 @@
     "Editorial": "Harper Perennial Modern Classics",
     "Autor": "Harper Lee",
     "Género": "Novela",
-    "Imagen": "/public/Matar a un Ruiseñor.webp"
+    "Imagen": "./public/Matar a un Ruiseñor.webp"
   },
   {
     "Título": "Crónica de una muerte anunciada",
@@ -87,7 +87,7 @@
     "Editorial": "Vintage Espanol",
     "Autor": "Gabriel García Márquez",
     "Género": "Realismo",
-    "Imagen": "/public/Crónica de una Muerte Anunciada.webp"
+    "Imagen": "./public/Crónica de una Muerte Anunciada.webp"
   },
   {
     "Título": "El gran Gatsby",
@@ -96,7 +96,7 @@
     "Editorial": "Anagrama",
     "Autor": "F. Scott Fitzgerald",
     "Género": "Novela",
-    "Imagen": "/public/El Gran Gatsby.webp"
+    "Imagen": "./public/El Gran Gatsby.webp"
   },
   {
     "Título": "Moby Dick",
@@ -105,7 +105,7 @@
     "Editorial": "Penguin Classics",
     "Autor": "Herman Melville",
     "Género": "Aventuras",
-    "Imagen": "/public/Moby Dick.webp"
+    "Imagen": "./public/Moby Dick.webp"
   },
   {
     "Título": "Anna Karenina",
@@ -114,7 +114,7 @@
     "Editorial": "Penguin Classics",
     "Autor": "León Tolstói",
     "Género": "Novela",
-    "Imagen": "/public/Anna Karenina.webp"
+    "Imagen": "./public/Anna Karenina.webp"
   },
   {
     "Título": "Los miserables",
@@ -123,7 +123,7 @@
     "Editorial": "Penguin Classics",
     "Autor": "Victor Hugo",
     "Género": "Novela",
-    "Imagen": "/public/Los Miserables.webp"
+    "Imagen": "./public/Los Miserables.webp"
   },
   {
     "Título": "El alquimista",
@@ -132,7 +132,7 @@
     "Editorial": "HarperOne",
     "Autor": "Paulo Coelho",
     "Género": "Fantasía",
-    "Imagen": "/public/El Alquimista.webp"
+    "Imagen": "./public/El Alquimista.webp"
   },
   {
     "Título": "El retrato de Dorian Gray",
@@ -141,7 +141,7 @@
     "Editorial": "Penguin Classics",
     "Autor": "Oscar Wilde",
     "Género": "Gótica",
-    "Imagen": "/public/El Retrato de Dorian Gray.webp"
+    "Imagen": "./public/El Retrato de Dorian Gray.webp"
   },
   {
     "Título": "Crimen y castigo",
@@ -150,7 +150,7 @@
     "Editorial": "Penguin Classics",
     "Autor": "Fiodor Dostoievski",
     "Género": "Novela",
-    "Imagen": "/public/Crimen y Castigo.webp"
+    "Imagen": "./public/Crimen y Castigo.webp"
   },
   {
     "Título": "Rayuela",
@@ -159,7 +159,7 @@
     "Editorial": "Alfaguara",
     "Autor": "Julio Cortázar",
     "Género": "Novela",
-    "Imagen": "/public/Rayuela.webp"
+    "Imagen": "./public/Rayuela.webp"
   },
   {
     "Título": "Drácula",
@@ -168,7 +168,7 @@
     "Editorial": "Penguin Classics",
     "Autor": "Bram Stoker",
     "Género": "Gótica",
-    "Imagen": "/public/Drácula.webp"
+    "Imagen": "./public/Drácula.webp"
   },
   {
     "Título": "La odisea",
@@ -177,7 +177,7 @@
     "Editorial": "Penguin Classics",
     "Autor": "Homero",
     "Género": "Fantasía",
-    "Imagen": "/public/La Odisea.webp"
+    "Imagen": "./public/La Odisea.webp"
   },
   {
     "Título": "El nombre del viento",
@@ -186,7 +186,7 @@
     "Editorial": "Plaza & Janés",
     "Autor": "Patrick Rothfuss",
     "Género": "Fantasía",
-    "Imagen": "/public/El Nombre del Viento.webp"
+    "Imagen": "./public/El Nombre del Viento.webp"
   },
   {
     "Título": "El código Da Vinci",
@@ -195,7 +195,7 @@
     "Editorial": "Vintage Espanol",
     "Autor": "Dan Brown",
     "Género": "Misterio",
-    "Imagen": "/public/El Código Da Vinci.webp"
+    "Imagen": "./public/El Código Da Vinci.webp"
   },
   {
     "Título": "El perfume",
@@ -204,7 +204,7 @@
     "Editorial": "Seix Barral",
     "Autor": "Patrick Süskind",
     "Género": "Novela",
-    "Imagen": "/public/El Perfume.webp"
+    "Imagen": "./public/El Perfume.webp"
   },
   {
     "Título": "La hoguera de las vanidades",
@@ -213,7 +213,7 @@
     "Editorial": "Debolsillo",
     "Autor": "Tom Wolfe",
     "Género": "Novela",
-    "Imagen": "/public/La Hoguera de las Vanidades.webp"
+    "Imagen": "./public/La Hoguera de las Vanidades.webp"
   },
   {
     "Título": "La insoportable levedad del ser",
@@ -222,7 +222,7 @@
     "Editorial": "Harper Perennial Modern Classics",
     "Autor": "Milan Kundera",
     "Género": "Novela",
-    "Imagen": "/public/La Insoportable Levedad del Ser.webp"
+    "Imagen": "./public/La Insoportable Levedad del Ser.webp"
   },
   {
     "Título": "El amor en los tiempos de cólera",
@@ -231,7 +231,7 @@
     "Editorial": "Vintage Espanol",
     "Autor": "Gabriel García Márquez",
     "Género": "Novela",
-    "Imagen": "/public/El Amor en los Tiempos de Cólera.webp"
+    "Imagen": "./public/El Amor en los Tiempos de Cólera.webp"
   },
   {
     "Título": "Los pilares de la Tierra",
@@ -240,7 +240,7 @@
     "Editorial": "Penguin Books",
     "Autor": "Ken Follett",
     "Género": "Novela",
-    "Imagen": "/public/Los Pilares de la Tierra.webp"
+    "Imagen": "./public/Los Pilares de la Tierra.webp"
   },
   {
     "Título": "El arte de amar",
@@ -249,7 +249,7 @@
     "Editorial": "Fondo de Cultura Económica",
     "Autor": "Ovidio",
     "Género": "Gótica",
-    "Imagen": "/public/El Arte de Amar.webp"
+    "Imagen": "./public/El Arte de Amar.webp"
   },
   {
     "Título": "La metamorfosis",
@@ -258,7 +258,7 @@
     "Editorial": "Penguin Books",
     "Autor": "Franz Kafka",
     "Género": "Novela",
-    "Imagen": "/public/La Metamorfosis.webp"
+    "Imagen": "./public/La Metamorfosis.webp"
   },
   {
     "Título": "El club de la lucha",
@@ -267,7 +267,7 @@
     "Editorial": "Debolsillo",
     "Autor": "Chuck Palahniuk",
     "Género": "Misterio",
-    "Imagen": "/public/El Club de la Lucha.webp"
+    "Imagen": "./public/El Club de la Lucha.webp"
   },
   {
     "Título": "Memorias de África",
@@ -276,7 +276,7 @@
     "Editorial": "Debolsillo",
     "Autor": "Isak Dinesen",
     "Género": "Gótica",
-    "Imagen": "/public/Memorias de Africa.webp"
+    "Imagen": "./public/Memorias de Africa.webp"
   },
   {
     "Título": "El médico",
@@ -285,7 +285,7 @@
     "Editorial": "Debolsillo",
     "Autor": "Noah Gordon",
     "Género": "Novela",
-    "Imagen": "/public/El Medico.webp"
+    "Imagen": "./public/El Medico.webp"
   },
   {
     "Título": "La ciudad y los perros",
@@ -294,7 +294,7 @@
     "Editorial": "Alianza Editorial",
     "Autor": "Mario Vargas Llosa",
     "Género": "Novela",
-    "Imagen": "/public/La Ciudad y los Perros.webp"
+    "Imagen": "./public/La Ciudad y los Perros.webp"
   },
   {
     "Título": "El laberinto de los espíritus",
@@ -303,7 +303,7 @@
     "Editorial": "Planeta",
     "Autor": "Carlos Ruiz Zafón",
     "Género": "Gótica",
-    "Imagen": "/public/El Laberinto de los Espiritus.webp"
+    "Imagen": "./public/El Laberinto de los Espiritus.webp"
   },
   {
     "Título": "La naranja mecánica",
@@ -312,7 +312,7 @@
     "Editorial": "W. W. Norton & Company",
     "Autor": "Anthony Burgess",
     "Género": "Realismo",
-    "Imagen": "/public/La Naranja Mecanica.webp"
+    "Imagen": "./public/La Naranja Mecanica.webp"
   },
   {
     "Título": "La historia interminable",
@@ -321,7 +321,7 @@
     "Editorial": "Klett-Cotta",
     "Autor": "Michael Ende",
     "Género": "Fantasía",
-    "Imagen": "/public/La Historia Interminable.webp"
+    "Imagen": "./public/La Historia Interminable.webp"
   },
   {
     "Título": "El juego de Ender",
@@ -330,7 +330,7 @@
     "Editorial": "Zeta Bolsillo",
     "Autor": "Orson Scott Card",
     "Género": "Ficción",
-    "Imagen": "/public/El Juego de Ender.webp"
+    "Imagen": "./public/El Juego de Ender.webp"
   },
   {
     "Título": "El túnel",
@@ -339,7 +339,7 @@
     "Editorial": "Seix Barral",
     "Autor": "Ernesto Sabato",
     "Género": "Novela",
-    "Imagen": "/public/El Tunel.webp"
+    "Imagen": "./public/El Tunel.webp"
   },
   {
     "Título": "La isla del tesoro",
@@ -348,7 +348,7 @@
     "Editorial": "Penguin Clásicos",
     "Autor": "Robert Louis Stevenson",
     "Género": "Aventura",
-    "Imagen": "/public/La Isla del Tesoro.webp"
+    "Imagen": "./public/La Isla del Tesoro.webp"
   },
   {
     "Título": "Viaje al centro de la Tierra",
@@ -357,7 +357,7 @@
     "Editorial": "Alianza Editorial",
     "Autor": "Julio Verne",
     "Género": "Aventura",
-    "Imagen": "/public/Viaje al Centro de la Tierra.webp"
+    "Imagen": "./public/Viaje al Centro de la Tierra.webp"
   },
   {
     "Título": "Las minas del rey Salomón",
@@ -366,7 +366,7 @@
     "Editorial": "Alianza Editorial",
     "Autor": "H. Rider Haggard",
     "Género": "Aventura",
-    "Imagen": "/public/Las Minas del Rey Salomon.webp"
+    "Imagen": "./public/Las Minas del Rey Salomon.webp"
   },
   {
     "Título": "La vuelta al mundo en ochenta días",
@@ -375,7 +375,7 @@
     "Editorial": "Debolsillo",
     "Autor": "Julio Verne",
     "Género": "Aventura",
-    "Imagen": "/public/La Vuelta al Mundo.webp"
+    "Imagen": "./public/La Vuelta al Mundo.webp"
   },
   {
     "Título": "Robinson Crusoe",
@@ -384,7 +384,7 @@
     "Editorial": "Alianza Editorial",
     "Autor": "Daniel Defoe",
     "Género": "Aventura",
-    "Imagen": "/public/Robinson Crusoe.webp"
+    "Imagen": "./public/Robinson Crusoe.webp"
   },
   {
     "Título": "El misterio de Edwin Drood",
@@ -393,7 +393,7 @@
     "Editorial": "Cátedra",
     "Autor": "Charles Dickens",
     "Género": "Misterio",
-    "Imagen": "/public/El Misterio.webp"
+    "Imagen": "./public/El Misterio.webp"
   },
   {
     "Título": "El asesinato de Roger Ackroyd",
@@ -402,7 +402,7 @@
     "Editorial": "Debolsillo",
     "Autor": "Agatha Christie",
     "Género": "Misterio",
-    "Imagen": "/public/El Asesinato.webp"
+    "Imagen": "./public/El Asesinato.webp"
   },
   {
     "Título": "El cuervo",
@@ -411,7 +411,7 @@
     "Editorial": "Losada",
     "Autor": "Edgar Allan Poe",
     "Género": "Misterio",
-    "Imagen": "/public/El Cuervo.webp"
+    "Imagen": "./public/El Cuervo.webp"
   },
   {
     "Título": "El nombre de la rosa",
@@ -420,7 +420,7 @@
     "Editorial": "Edhasa",
     "Autor": "Umberto Eco",
     "Género": "Misterio",
-    "Imagen": "/public/El Nombre de la Rosa.webp"
+    "Imagen": "./public/El Nombre de la Rosa.webp"
   },
   {
     "Título": "Dune",
@@ -429,7 +429,7 @@
     "Editorial": "Ace Books",
     "Autor": "Frank Herbert",
     "Género": "Ciencia Ficción",
-    "Imagen": "/public/Dune.webp"
+    "Imagen": "./public/Dune.webp"
   },
   {
     "Título": "Neuromante",
@@ -438,7 +438,7 @@
     "Editorial": "Minotauro",
     "Autor": "William Gibson",
     "Género": "Ciencia Ficción",
-    "Imagen": "/public/Neuromante.webp"
+    "Imagen": "./public/Neuromante.webp"
   },
   {
     "Título": "Solaris",
@@ -447,6 +447,6 @@
     "Editorial": "Mariner Books",
     "Autor": "Stanislaw Lem",
     "Género": "Ciencia Ficción",
-    "Imagen": "/public/Solaris.webp"
+    "Imagen": "./public/Solaris.webp"
   }
 ]
