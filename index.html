@@ -478,7 +478,7 @@
           <h2>Contacto</h2>
         </div>
         <div class="contacto__main">
-          <form action="">
+          <form action="" class="formulario_contacto">
             <div class="contacto__contenido formulario">
               <div class="div1">
                 <label for="nombre">Nombre</label>
@@ -487,10 +487,10 @@
                 <label for="apellido">Apellido</label>
               </div>
               <div class="div3">
-                <input type="text" id="nombre" placeholder="Nombre" />
+                <input type="text" id="nombre" placeholder="Nombre" class="item_formulario_contacto"/>
               </div>
               <div class="div4">
-                <input type="text" id="apellido" placeholder="Apellido" />
+                <input type="text" id="apellido" placeholder="Apellido" class="item_formulario_contacto"/>
               </div>
               <div class="div5">
                 <label for="mail">Mail</label>
@@ -501,6 +501,7 @@
                   name="mail"
                   id="mail"
                   placeholder="biblioteca@tupueblo.com"
+                  class="item_formulario_contacto"
                 />
               </div>
               <div class="div7">
@@ -600,6 +601,7 @@
                   name="consulta"
                   id="consulta"
                   placeholder="Escriba su consulta aquí"
+                  class="item_formulario_contacto"
                 ></textarea>
               </div>
               <div class="div11">
@@ -717,5 +719,7 @@
     <script src="./js/buscador.js"></script>
 
     <script src="./js/menuResponsive.js"></script>
+
+    <script src="./js/validaciones.js"></script>
   </body>
 </html>
