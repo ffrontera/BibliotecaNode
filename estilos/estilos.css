@@ -530,3 +530,36 @@ p {
 .libro:hover {
   transform: rotateY(180deg);
 }
+
+/* Comienzo de estilos de registro y login */
+
+.registroLogin {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.contenedorPrincipal {
+  width: 100%;
+  max-width: 1272px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contenedorOculto {
+  opacity: 0;
+}
+
+.bannerLateral {
+  width: 30vw;
+  height: 100vh;
+  
+  object-fit: cover;
+}
+
+.imagenBannerLateral {
+  object-fit: cover;
+}
