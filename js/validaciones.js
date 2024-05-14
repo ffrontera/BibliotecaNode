@@ -7,7 +7,7 @@ formContacto.addEventListener("submit" , (event) => {
     for (let i = 0; i < inputText.length; i++) {
         
         if (inputText[i].value.trim().length < 3 ) {
-            alert(`Debe completar el campo "${inputText[i].getAttribute("id").toLocaleUpperCase}"`);
+            alert(`Debe completar el campo "${inputText[i].getAttribute("id").toUpperCase()}"`);
             event.preventDefault();
             return;
         }        
@@ -15,7 +15,7 @@ formContacto.addEventListener("submit" , (event) => {
     
     if(!document.querySelector('input[name="condicion"]:checked')){
         event.preventDefault();
-        alert("Debe seleccionar si esta asociado o no");
+        alert("Debe indicar si está asociado o no");
         return;
     }
 
