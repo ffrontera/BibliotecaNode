@@ -21,17 +21,18 @@
   <body>
     <header>
       <nav class="barraNavegacion">
-        <a href="/" class="linkLogo">
+        <a href="./index.html" class="linkLogo">
           <img src="./img/logo.svg" alt="Logo de la biblioteca" class="logo" />
         </a>
 
-        <form action="" class="buscadorGrupo" id="buscador">
+        <form action="./listado.html" class="buscadorGrupo" id="buscador">
           <input
             type="text"
             placeholder="Buscar"
             name="inputBuscador"
             class="buscador"
             id="valorBuscado"
+            onkeypress="return event.keyCode !== 13;"
           />
           <button type="submit" class="botonBuscador">
             <i class="fa-solid fa-magnifying-glass"></i>
@@ -43,10 +44,16 @@
         </div>
 
         <div class="menu" id="menu">
-          <a href="#recomendaciones" class="botonSecundario">Recomendados</a>
-          <a href="#sobreNosotros" class="botonSecundario">Sobre nosotros</a>
-          <a href="#contacto" class="botonSecundario">Contacto</a>
-          <a href="#contacto" class="botonPrimario">¡Quiero ser parte!</a>
+          <a href="./index.html#recomendaciones" class="botonSecundario"
+            >Recomendados</a
+          >
+          <a href="./index.html#sobreNosotros" class="botonSecundario"
+            >Sobre nosotros</a
+          >
+          <a href="./index.html#contacto" class="botonSecundario">Contacto</a>
+          <a href="./index.html#contacto" class="botonPrimario"
+            >¡Quiero ser parte!</a
+          >
         </div>
       </nav>
     </header>
@@ -58,6 +65,7 @@
         </div>
       </section>
     </main>
-    <script src="js/script.js" type="module"></script>
+    <script src="./js/listado.js" type="module"></script>
+    <script src="./js/menuResponsive.js"></script>
   </body>
 </html>
