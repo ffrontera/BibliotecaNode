@@ -247,7 +247,7 @@ section {
   bottom: 10px;
 }
 
-.informacionButton a {
+.informacionLink {
   display: block;
   text-decoration: none;
   cursor: pointer;
