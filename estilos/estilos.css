@@ -237,7 +237,7 @@ section {
   color: #2386c4;
 }
 
-.informacion button {
+.informacionButton {
   background-color: #fff;
   border: 1px solid #000;
   border-radius: 20px;
@@ -247,10 +247,14 @@ section {
   bottom: 10px;
 }
 
-button a {
+.informacionButton a {
+  display: block;
   text-decoration: none;
   cursor: pointer;
+  font-weight: 600;
   font-size: 14px;
+  text-align: center;
+  margin: 0;
 }
 
 /*Sección de sobreNosotros*/
