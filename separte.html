@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet" />
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.5.2/css/all.css" crossorigin="anonymous" />
+    <link rel="stylesheet" href="estilos/estilos.css" />
+    <title>BiblioNode</title>
+</head>
+
+<body>
+    <header>
+        <nav class="barraNavegacion">
+            <a href="./index.html" class="linkLogo">
+                <img src="./img/logo.svg" alt="Logo de la biblioteca" class="logo" />
+            </a>
+
+            <form action="" class="buscadorGrupo" id="buscador">
+                <input type="text" placeholder="Buscar" name="inputBuscador" class="buscador" id="valorBuscado" />
+                <button type="submit" class="botonBuscador">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </form>
+
+            <div class="menuResponsive" id="menuResponsive">
+                <i class="fa-solid fa-book"></i>
+            </div>
+
+            <div class="menu" id="menu">
+                <a href="./index.html#recomendaciones" class="botonSecundario">Recomendados</a>
+                <a href="./index.html#sobreNosotros" class="botonSecundario">Sobre nosotros</a>
+                <a href="./index.html#contacto" class="botonSecundario">Contacto</a>
+                <a href="./separte.html" class="botonPrimario">¡Quiero ser parte!</a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="registroLogin">
+        <section class="contenedorPrincipal">
+            <div class="contenedorFormulario">
+            <h1>Sé parte de la biblioteca</h1>
+
+            <div class="contenedorFormulario" id="contenedor">
+                <div>
+                    <p>¿Ya sos miembro? <span id="toggleRegistroIniciosesion">Iniciar sesión</span></p>
+                </div>
+                <form method="post" enctype="multipart/form-data">
+
+
+                    <label for="nombre"><b>Nombre</b></label>
+                    <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>
+
+                    <label for="apellido"><b>Apellido</b></label>
+                    <input type="text" placeholder="Apellido" name="apellido" id="apellido" required>
+
+                    <label for="telefono"><b>Teléfono</b></label>
+                    <input type="text" placeholder="Teléfono" name="telefono" id="telefono" required>
+
+                    <label for="email"><b>Email</b></label>
+                    <input type="text" placeholder="Email" name="email" id="email" required>
+
+                    <label for="contraseña"><b>Contraseña</b></label>
+                    <input type="password" placeholder="Contraseña" name="contraseña" id="contraseña" required>
+
+                    <label for="contraseñaR"><b>Repetí la contraseña</b></label>
+                    <input type="password" placeholder="Repetí la contraseña" name="contraseña-r" id="contraseñaR"
+                        required>
+
+                    <p>Frente y dorso del documento</p>
+                    <p>Necesitamos esta información para adjuntarla a tu ficha de asociado.</p>
+
+                    <div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
+                        <p>Arrastrá y soltá los documentos a este recuadro para subirlos a la web o </p><input
+                            type="file" id="fotoDni" name="fotoDni" accept="image/png, image/jpeg" multiple />
+                        <div class="vistaPrevia">
+                        </div>
+                    </div>
+
+                    <p>Por favor, aceptá nuestros <a href="./public/terminosycondiciones.txt" download>términos y
+                            condiciones de registro</a>.</p>
+
+                    <button type="submit" class="botonRegistro">Registrarme</button>
+
+                </form>
+            </div>
+
+            <div class="contenedorOculto contenedorFormulario" id="contenedor">
+                <div>
+                    <p>¿Todavía no sos parte? <span id="toggleRegistroIniciosesion">Registrate</span></p>
+                </div>
+            </div>
+        </div>
+        <div class="bannerLateral">
+            <img src="./img/escritorioconlibros.jpg" class="imagenBannerLateral" alt="Imagen tomada desde arriba donde se observa una mesa o escritorio con libros y una persona leyendo">
+        </div>
+        </section>
+    </main>
+</body>
+
+<script>
+    const element = document.getElementById("toggleRegistroIniciosesion");
+    element.addEventListener("click", funcionToggle);
+
+    function funcionToggle() {
+        let contenedor = document.getElementById("contenedor");
+        contenedor.classList.toggle("contenedorOculto");
+    }
+
+</script>
+<script>
+    function dropHandler(ev) {
+        console.log("Se soltó un archivo.");
+
+        // Previene que se abra el archivo.
+        ev.preventDefault();
+
+        if (ev.dataTransfer.items) {
+            // Use DataTransferItemList interface to access the file(s)
+            [...ev.dataTransfer.items].forEach((item, i) => {
+                // If dropped items aren't files, reject them
+                if (item.kind === "file") {
+                    const file = item.getAsFile();
+                    console.log(`… file[${i}].name = ${file.name}`);
+                }
+            });
+        } else {
+            // Use DataTransfer interface to access the file(s)
+            [...ev.dataTransfer.files].forEach((file, i) => {
+                console.log(`… file[${i}].name = ${file.name}`);
+            });
+        }
+    }
+</script>
+<script>
+    const input = document.getElementById("foto-dni");
+    const preview = document.querySelector(".preview");
+
+    input.style.opacity = 0;
+
+    function updateImageDisplay() {
+        while (preview.firstChild) {
+            preview.removeChild(preview.firstChild);
+        }
+
+        const curFiles = input.files;
+        if (curFiles.length === 0) {
+            const para = document.createElement("p");
+            para.textContent = "No files currently selected for upload";
+            preview.appendChild(para);
+        } else {
+            const list = document.createElement("ol");
+            preview.appendChild(list);
+
+            for (const file of curFiles) {
+                const listItem = document.createElement("li");
+                const para = document.createElement("p");
+                if (validFileType(file)) {
+                    para.textContent = `File name ${file.name}, file size ${returnFileSize(
+                        file.size,
+                    )}.`;
+                    const image = document.createElement("img");
+                    image.src = URL.createObjectURL(file);
+                    image.alt = image.title = file.name;
+
+                    listItem.appendChild(image);
+                    listItem.appendChild(para);
+                } else {
+                    para.textContent = `File name ${file.name}: Not a valid file type. Update your selection.`;
+                    listItem.appendChild(para);
+                }
+
+                list.appendChild(listItem);
+            }
+        }
+    }
+</script>
+
+</html>
