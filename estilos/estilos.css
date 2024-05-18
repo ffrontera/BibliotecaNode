@@ -704,7 +704,10 @@ footer {
 }
 .contenedorFormulario{
   display: flex;
+
+  width: 50px;
 }
+
 
 .datos{
   display: flex;
@@ -741,7 +744,7 @@ footer {
   width: 600px;
   height: 600px;
   padding: 20px;
-  flex-wrap: wrap;
+
 
 }
 .info{
@@ -768,3 +771,4 @@ footer {
   margin: 0 auto;
   margin-bottom: 10px;
 }
+
