@@ -5,6 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="shortcut icon" href="img/favicon.ico" type="image/x-icon" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
         rel="stylesheet" />
@@ -39,11 +40,14 @@
             </div>
         </nav>
     </header>
+    <h1 class="seParteTitulo">Sé parte de la biblioteca</h1>
 
     <main class="registroLogin">
+        
         <section class="contenedorPrincipal">
+            
             <div class="contenedorFormulario">
-            <h1>Sé parte de la biblioteca</h1>
+            
 
             <div class="contenedorFormulario" id="contenedor">
                 <div>
@@ -53,40 +57,47 @@
 
 
                     <label for="nombre"><b>Nombre</b></label>
-                    <input type="text" placeholder="Nombre" name="nombre" id="nombre" required>
+                    <input class="datos" type="text" placeholder="Nombre" name="nombre" id="nombre" required>
 
                     <label for="apellido"><b>Apellido</b></label>
-                    <input type="text" placeholder="Apellido" name="apellido" id="apellido" required>
+                    <input class="datos" type="text" placeholder="Apellido" name="apellido" id="apellido" required>
 
                     <label for="telefono"><b>Teléfono</b></label>
-                    <input type="text" placeholder="Teléfono" name="telefono" id="telefono" required>
+                    <input class="datos" type="text" placeholder="Teléfono" name="telefono" id="telefono" required>
 
                     <label for="email"><b>Email</b></label>
-                    <input type="text" placeholder="Email" name="email" id="email" required>
+                    <input class="datos" type="text" placeholder="Email" name="email" id="email" required>
 
                     <label for="contraseña"><b>Contraseña</b></label>
-                    <input type="password" placeholder="Contraseña" name="contraseña" id="contraseña" required>
+                    <input class="datos" type="password" placeholder="Contraseña" name="contraseña" id="contraseña" required>
 
                     <label for="contraseñaR"><b>Repetí la contraseña</b></label>
-                    <input type="password" placeholder="Repetí la contraseña" name="contraseña-r" id="contraseñaR"
+                    <input class="datos" type="password" placeholder="Repetí la contraseña" name="contraseña-r" id="contraseñaR"
                         required>
 
-                    <p>Frente y dorso del documento</p>
-                    <p>Necesitamos esta información para adjuntarla a tu ficha de asociado.</p>
+                    <p class="info">Frente y dorso del documento</p>
+                    <p class="info">Necesitamos esta información para adjuntarla a tu ficha de asociado.</p>
 
                     <div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
-                        <p>Arrastrá y soltá los documentos a este recuadro para subirlos a la web o </p><input
-                            type="file" id="fotoDni" name="fotoDni" accept="image/png, image/jpeg" multiple />
+                        <p class="info">Arrastrá y soltá los documentos a este recuadro para subirlos a la web o </p>
+                        <input class="info" type="file" id="fotoDni" name="fotoDni" accept="image/png, image/jpeg" multiple />
                         <div class="vistaPrevia">
+
                         </div>
                     </div>
 
+                    <div class="terminosCondiciones">
+                        <input class="check" type="checkbox" id="terminos" name="terminos" required>
                     <p>Por favor, aceptá nuestros <a href="./public/terminosycondiciones.txt" download>términos y
                             condiciones de registro</a>.</p>
+                    </div>
 
                     <button type="submit" class="botonRegistro">Registrarme</button>
 
                 </form>
+                <div class="bannerLateral">
+                    <img src="./img/escritorioconlibros.jpg" class="imagenBannerLateral" alt="Imagen tomada desde arriba donde se observa una mesa o escritorio con libros y una persona leyendo">
+                </div>
             </div>
 
             <div class="contenedorOculto contenedorFormulario" id="contenedor">
@@ -95,9 +106,7 @@
                 </div>
             </div>
         </div>
-        <div class="bannerLateral">
-            <img src="./img/escritorioconlibros.jpg" class="imagenBannerLateral" alt="Imagen tomada desde arriba donde se observa una mesa o escritorio con libros y una persona leyendo">
-        </div>
+        
         </section>
     </main>
 </body>
@@ -179,5 +188,6 @@
         }
     }
 </script>
+
 
 </html>

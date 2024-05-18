@@ -516,27 +516,39 @@ p {
 /*footer*/
 
 footer {
-  height: 158px;
+  height: 80px;
   background-color: #151515;
 }
 
 .footer {
+  display: flex;
   max-width: 1272px;
   height: 100%;
-  display: flex;
-  justify-content: space-between;
+  justify-content:space-between;
   padding: 0 40px;
   margin: 0 auto;
 }
 
+.imgFooter{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+  
+}
+
 .menuFooter {
-  flex-direction: column;
+  flex-direction:row;
   justify-content: center;
 }
 
+
 .logoFooter {
+  display: flex;
   height: 46px;
-  margin-top: 10px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 }
 
 @media (min-width: 600px) and (max-width: 1200px) {
@@ -678,17 +690,34 @@ footer {
 
 /* Comienzo de estilos de registro y login */
 
+.seParteTitulo{
+  margin: 80px 123px 30px 123px;
+  
+}
+
 .registroLogin {
   display: flex;
+  flex-wrap: wrap;
   justify-content: center;
   width: 100%;
   height: 100vh;
 }
+.contenedorFormulario{
+  display: flex;
+}
 
+.datos{
+  display: flex;
+  flex-wrap: wrap;
+  width: 400px;
+  padding: 5px;
+  margin: 10px;
+}
 .contenedorPrincipal {
   width: 100%;
   max-width: 1272px;
   display: flex;
+  flex-wrap: wrap;
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
@@ -699,12 +728,43 @@ footer {
 }
 
 .bannerLateral {
+  display: flex;
+  flex-wrap: wrap;
   width: 30vw;
   height: 100vh;
-  
   object-fit: cover;
 }
 
 .imagenBannerLateral {
+  display: flex;
   object-fit: cover;
+  width: 600px;
+  height: 600px;
+  padding: 20px;
+  flex-wrap: wrap;
+
+}
+.info{
+  padding: 5px;
+  font-size: 15px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.terminosCondiciones{
+  display: flex;
+
+  padding: 20px 0 20px 0;
+}
+
+.terminosCondiciones a{
+  font-size: 15px;
+
+}
+
+.botonRegistro{
+  font-size: 14px;
+  padding: 5px;
+  display: flex;
+  margin: 0 auto;
+  margin-bottom: 10px;
 }
