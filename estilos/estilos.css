@@ -394,7 +394,8 @@ input[type="checkbox"]:checked+label .seleccionado {
 
 .contacto__contenido input,
 .contacto__contenido textarea,
-.formularioRegistro input {
+.formularioRegistro input,
+select {
   border: 0.5px solid #151515;
   border-radius: 10px;
   padding: 5px;
@@ -402,6 +403,10 @@ input[type="checkbox"]:checked+label .seleccionado {
   height: 100%;
   font-size: 16px;
   resize: none;
+}
+
+.formularioRegistro select {
+  width: auto;
 }
 
 .contacto__contenido input[type="submit"],
