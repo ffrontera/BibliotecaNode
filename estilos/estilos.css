@@ -690,11 +690,11 @@ footer {
 
 /* Comienzo de estilos de registro y login */
 
-.toggleRegistroIniciosesion{
+.toggleRegistro{
   cursor: pointer;
 }
 
-.toggleRegistroIniciosesion,
+.toggleRegistro,
 .subirArchivo {
   color: #F28729;
   text-decoration: underline;
@@ -754,7 +754,7 @@ footer {
   .divRegistro13 { grid-area: 7 / 1 / 8 / 3; }
   .divRegistro14 {
     grid-area: 8 / 1 / 12 / 3;
-    border: dotted 1px #151515;
+    border: dashed 1px #151515;
     border-radius: 16px; 
     text-align: center;}
   .divRegistro15 { grid-area: 12 / 1 / 13 / 3; }
@@ -786,12 +786,13 @@ input[type="file"]{
   display: inline;
 }
 
-.subirArchivo:hover {
+.subirArchivo:hover,
+.svgUpload {
   cursor: pointer;
 }
 
 .contenedorOculto {
-  opacity: 0;
+  display: none;
 }
 
 .contenedorBanner{

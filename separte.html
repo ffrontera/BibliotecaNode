@@ -49,11 +49,11 @@
             <div class="contenedorPrincipal">
 
 
-                <div class="contenedorFormulario" id="contenedor">
+                <div class="contenedorFormulario" id="contenedorRegistro">
                     <div class="contenedorFormulario__formulario">
                         <h1 class="seParteTitulo">Sé parte de la biblioteca</h1>
-                        <p>¿Ya sos miembro? <span id="toggleRegistroIniciosesion"
-                                class="toggleRegistroIniciosesion">Iniciar sesión</span></p>
+                        <p>¿Ya sos miembro? <span id="toggleIniciosesion"
+                                class="toggleRegistro">Iniciar sesión</span></p>
 
                         <form method="post" enctype="multipart/form-data" class="formularioRegistro">
 
@@ -104,11 +104,27 @@
                             </div>
                             <div class="divRegistro14">
                                 <div id="drop_zone" ondrop="dropHandler(event);" ondragover="dragOverHandler(event);">
-                                    <p class="info textoSubirArchivo">Arrastrá y soltá los documentos a este recuadro
-                                        para subirlos a la web o </p>
-                                    <label class="subirArchivo" for="file">Buscalos en tu equipo</label>
-                                    <input class="info" id="file" type="file" id="fotoDni" name="fotoDni"
-                                        accept="image/png, image/jpeg" multiple />
+                                    <label for="file">
+                                        <div class="imagenUpload">
+                                            <svg class="svgUpload" width="24" height="24" viewBox="0 0 24 24"
+                                                fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path
+                                                    d="M21 15V19C21 19.5304 20.7893 20.0391 20.4142 20.4142C20.0391 20.7893 19.5304 21 19 21H5C4.46957 21 3.96086 20.7893 3.58579 20.4142C3.21071 20.0391 3 19.5304 3 19V15"
+                                                    stroke="#F28729" stroke-width="2" stroke-linecap="round"
+                                                    stroke-linejoin="round" />
+                                                <path d="M17 8L12 3L7 8" stroke="#F28729" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                                <path d="M12 3V15" stroke="#F28729" stroke-width="2"
+                                                    stroke-linecap="round" stroke-linejoin="round" />
+                                            </svg>
+                                        </div>
+                                        <p class="info textoSubirArchivo">Arrastrá y soltá los documentos a este
+                                            recuadro
+                                            para subirlos a la web o </p>
+                                        <span class="subirArchivo">Buscalos en tu equipo</span>
+                                        <input class="info" id="file" type="file" id="fotoDni" name="fotoDni"
+                                            accept="image/png, image/jpeg" multiple />
+                                    </label>
                                     <div class="vistaPrevia">
 
                                     </div>
@@ -147,9 +163,10 @@
                     </div>
                 </div>
 
-                <div class="contenedorOculto contenedorFormulario" id="contenedor">
+                <div class="contenedorOculto contenedorFormulario" id="contenedorInicioSesion">
                     <div>
-                        <p>¿Todavía no sos parte? <span id="toggleRegistroIniciosesion">Registrate</span></p>
+                        <h1 class="seParteTitulo">Inicia sesión</h1>
+                        <p>¿Todavía no sos parte? <span id="toggleRegistro" class="toggleRegistro">Registrate</span></p>
                     </div>
                 </div>
             </div>
@@ -165,14 +182,14 @@
 </body>
 
 <script>
-    const element = document.getElementById("toggleRegistroIniciosesion");
-    element.addEventListener("click", funcionToggle);
-
-    function funcionToggle() {
-        let contenedor = document.getElementById("contenedor");
-        contenedor.classList.toggle("contenedorOculto");
-    }
-
+    const iniciarSesion = document.getElementById("toggleIniciosesion");
+    const registro = document.getElementById("toggleRegistro");
+    const contenedorRegistro = document.getElementById("contenedorRegistro");
+    const contenedorInicio = document.getElementById("contenedorInicioSesion");
+    iniciarSesion.addEventListener("click", () => {contenedorInicio.style.display = "flex";
+                                            contenedorRegistro.style.display = "none";});
+    registro.addEventListener("click", () => {contenedorInicio.style.display = "none";
+                                            contenedorRegistro.style.display = "flex";});
 </script>
 <script>
     function dropHandler(ev) {
