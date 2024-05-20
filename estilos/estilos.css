@@ -674,7 +674,8 @@ footer {
 
 .divRegistro16 {
   grid-area: 13 / 1 / 14 / 3;
-  text-align: end;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .divRegistro1,
@@ -683,7 +684,8 @@ footer {
 .divRegistro6,
 .divRegistro9,
 .divRegistro10,
-.divRegistro14 {
+.divRegistro14,
+.divRegistro16 {
   display: flex;
   text-align: center;
 }
