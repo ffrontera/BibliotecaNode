@@ -690,6 +690,16 @@ footer {
 
 /* Comienzo de estilos de registro y login */
 
+.toggleRegistroIniciosesion{
+  cursor: pointer;
+}
+
+.toggleRegistroIniciosesion,
+.subirArchivo {
+  color: #F28729;
+  text-decoration: underline;
+}
+
 .registroLogin {
   width: 100%;
   height: 90vh;
@@ -773,8 +783,6 @@ input[type="file"]{
 }
 
 .subirArchivo {
-  color: #F28729;
-  text-decoration: underline;
   display: inline;
 }
 
