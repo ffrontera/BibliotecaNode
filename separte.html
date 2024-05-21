@@ -55,7 +55,7 @@
                         <p>¿Ya sos miembro? <span id="toggleIniciosesion" class="toggleRegistro">Iniciar sesión</span>
                         </p>
 
-                        <form method="post" enctype="multipart/form-data" class="formularioRegistro">
+                        <form action="./listado.html" enctype="multipart/form-data" class="formularioRegistro">
 
                             <div class="divRegistro1">
                                 <label for="nombre" class="negrita">Nombre</label>
@@ -65,10 +65,10 @@
                             </div>
                             <div class="divRegistro3">
                                 <input class="datos" type="text" placeholder="Nombre" name="nombre" id="nombre"
-                                    required autofocus>
+                                     autofocus>
                             </div>
                             <div class="divRegistro4">
-                                <input class="datos" type="text" placeholder="Email" name="email" id="email" required>
+                                <input class="datos" type="text" placeholder="Email" name="email" id="email" >
                             </div>
                             <div class="divRegistro5">
                                 <label for="apellido" class="negrita">Apellido</label>
@@ -78,11 +78,11 @@
                             </div>
                             <div class="divRegistro7">
                                 <input class="datos" type="text" placeholder="Apellido" name="apellido" id="apellido"
-                                    required>
+                                    >
                             </div>
                             <div class="divRegistro8">
                                 <input class="datos" type="password" placeholder="Contraseña" name="contraseña"
-                                    id="contraseña" required>
+                                    id="contraseña">
                             </div>
                             <div class="divRegistro9">
                                 <label for="telefono" class="negrita">Teléfono</label>
@@ -91,12 +91,11 @@
                                 <label for="contraseñaR" class="negrita">Repetí la contraseña</label>
                             </div>
                             <div class="divRegistro11">
-                                <input class="datos" type="text" placeholder="Teléfono" name="telefono" id="telefono"
-                                    required>
+                                <input class="datos" type="text" placeholder="Teléfono" name="telefono" id="telefono">
                             </div>
                             <div class="divRegistro12">
                                 <input class="datos" type="password" placeholder="Repetí la contraseña"
-                                    name="contraseña-r" id="contraseñaR" required>
+                                    name="contraseña-r" id="contraseñaR">
                             </div>
                             <div class="divRegistro13">
                                 <p class="info negrita">Frente y dorso del documento</p>
@@ -131,7 +130,7 @@
                             </div>
                             <div class="divRegistro15">
                                 <div class="terminosCondiciones">
-                                    <input type="checkbox" id="terminos" name="terminos" required>
+                                    <input type="checkbox" id="terminos" name="terminos">
                                     <label for="terminos" class="label_flex">
                                         <i class="seleccionado">
                                             <svg viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -176,11 +175,11 @@
                         <h1 class="seParteTitulo">Inicia sesión</h1>
                         <p>¿Todavía no sos parte? <span id="toggleRegistro" class="toggleRegistro">Registrate</span></p>
                         <div class="ingreso_formulario">
-                            <form action="" class="formularioIngreso">
+                            <form action="./listado.html" class="formularioIngreso">
                                 <label for="mail">Email</label>
-                                <input type="email" name="mail" id="mail" autofocus>
+                                <input type="email" name="mail" id="mail" class="item_formulario_ingreso" autofocus>
                                 <label for="contraseniaIngreso">Contraseña</label>
-                                <input type="password" name="contraseniaIngreso" id="contraseniaIngreso">
+                                <input type="password" name="contraseniaIngreso" id="contraseniaIngreso"  class="item_formulario_ingreso">
                                 <p>Olvide mi <a href="" class="toggleRegistro">contraseña</a></p>
                                 <div class="botones">
                                     <input type="submit" value="Ingresar">
@@ -203,6 +202,7 @@
     <script src="./js/menuResponsive.js"></script>
     <script src="./js/mostrarOcultar.js"></script>
     <script src="./js/soltarArchivo.js"></script>
+    <script src="./js/validacionIngreso.js"></script>
 </body>
 
 
