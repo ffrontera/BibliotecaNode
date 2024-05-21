@@ -395,7 +395,8 @@ input[type="checkbox"]:checked+label .seleccionado {
 .contacto__contenido input,
 .contacto__contenido textarea,
 .formularioRegistro input,
-select {
+select,
+.formularioIngreso input {
   border: 0.5px solid #151515;
   border-radius: 10px;
   padding: 5px;
@@ -411,6 +412,9 @@ select {
 
 .contacto__contenido input[type="submit"],
 .divRegistro16 input[type="submit"],
+.divRegistro16 input[type="button"],
+.ingreso_formulario input[type="submit"],
+#botonRegistro,
 input[type="file"] {
   width: auto;
   background: none;
@@ -717,6 +721,11 @@ input[type="file"] {
   cursor: pointer;
 }
 
+.formularioIngreso {
+  display: flex;
+  flex-direction: column;
+}
+
 .contenedorOculto {
   display: none;
 }
@@ -749,6 +758,12 @@ input[type="file"] {
 
 .terminosCondiciones a {
   font-size: 15px;
+}
+
+.botones {
+  display: flex;
+  flex-direction: row;
+  column-gap: 2%;
 }
 
 .botonRegistro {
