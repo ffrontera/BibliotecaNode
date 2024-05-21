@@ -552,18 +552,20 @@ footer {
 
 }
 
-.menuFooter {
-  flex-direction: row;
-  justify-content: center;
-}
-
-
 .logoFooter {
   display: flex;
   height: 46px;
   justify-content: center;
   align-items: center;
   text-align: center;
+}
+
+.copyrigth{
+  color: #eeeeee;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 /* Comienzo de estilos de registro y login */
@@ -799,7 +801,8 @@ input[type="file"] {
 @media (max-width: 600px) {
 
   nav,
-  section {
+  section,
+  .footer {
     padding-left: 2%;
     padding-right: 2%;
   }
@@ -895,10 +898,6 @@ input[type="file"] {
     margin: 0;
   }
 
-  .menuFooterResponsive {
-    width: 10px;
-  }
-
   /*Recomendados*/
   .recomendaciones {
     height: 850px;
@@ -916,6 +915,18 @@ input[type="file"] {
     width: 500px;
     height: 200px;
     padding-left: 5px;
+  }
+
+  /* Footer */
+  .footer {
+    text-align: center;
+  }
+  .footer a {
+    display: none;
+  }
+
+  .desarrolladores {
+    font-size: 10px;
   }
 
   /* Registro login */
