@@ -75,6 +75,7 @@ nav {
   text-decoration: none;
   color: #fafafa;
   font-size: 16px;
+  text-align: center;
   border: 1px solid #fafafa;
   padding: 8px 12px;
   border-radius: 16px;
@@ -796,6 +797,61 @@ input[type="file"] {
     height: 200px;
     padding-left: 5px;
   }
+}
+
+@media (min-width: 601px) and (max-width: 768px) {
+  /* Formulario registro */
+  
+  .formularioRegistro {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-column-gap: 2%;
+    grid-row-gap: 1%;
+    margin-top: 4%;
+    }
+    
+    .divRegistro1 { grid-area: 1 / 1 / 2 / 2; }
+    .divRegistro2 { grid-area: 1 / 2 / 2 / 3; }
+    .divRegistro3 { grid-area: 2 / 1 / 3 / 2; }
+    .divRegistro4 { grid-area: 2 / 2 / 3 / 3; }
+    .divRegistro5 { grid-area: 3 / 1 / 4 / 2; }
+    .divRegistro6 { grid-area: 3 / 2 / 4 / 3; }
+    .divRegistro7 { grid-area: 4 / 1 / 5 / 2; }
+    .divRegistro8 { grid-area: 4 / 2 / 5 / 3; }
+    .divRegistro9 { grid-area: 5 / 1 / 6 / 2; }
+    .divRegistro10 { grid-area: 5 / 2 / 6 / 3; }
+    .divRegistro11 { grid-area: 6 / 1 / 7 / 2; }
+    .divRegistro12 { grid-area: 6 / 2 / 7 / 3; }
+    .divRegistro13 { grid-area: 1 / 3 / 3 / 5; }
+    .divRegistro14 { grid-area: 3 / 3 / 4 / 5; }
+    .divRegistro15 { grid-area: 4 / 3 / 5 / 5; }
+    .divRegistro16 { 
+      grid-area: 5 / 3 / 7 / 5;
+      flex-direction: column;
+     }
+
+     .divRegistro1,
+     .divRegistro2,
+     .divRegistro5,
+     .divRegistro6,
+     .divRegistro9,
+     .divRegistro10 {
+      display: flex;
+      align-items: flex-end;
+     }
+
+    .contenedorBanner {
+      display: none;
+    }
+
+    .contenedorPrincipal {
+      width: 100%;
+    }
+
+    .textoSubirArchivo {
+      display: none;
+    }
 }
 
 @media (max-width: 600px) {
